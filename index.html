@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nandia24</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<script type="module" src="app.js" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container-fluid">
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="assets/logo.png" alt="logo" class="logo me-2">
+<span>Nandia24</span>
+</a>
+<div class="d-flex">
+<button id="btnLogout" class="btn btn-outline-light btn-sm me-2 d-none">Logout</button>
+</div>
+</div>
+</nav>
+
+
+<!-- Loading -->
+<div id="loading" class="vh-100 d-flex justify-content-center align-items-center">
+<div>
+<h3>লোড হচ্ছে...</h3>
+</div>
+</div>
+
+
+<!-- Login/Register -->
+<div id="authSection" class="container my-4 d-none">
+<div class="row">
+<div class="col-md-6 offset-md-3">
+<div class="card shadow">
+<div class="card-body">
+<h4 class="card-title text-center">লগইন</h4>
+<div class="mb-2"><input id="loginPhone" class="form-control" placeholder="মোবাইল নাম্বার (e.g. 017...)" /></div>
+<div class="mb-2"><input id="loginPassword" type="password" class="form-control" placeholder="পাসওয়ার্ড" /></div>
+<div class="mb-2"><button onclick="loginUser()" class="btn btn-primary w-100">লগইন</button></div>
+
+
+<hr>
+
+
+<h4 class="card-title text-center">রেজিস্ট্রেশন</h4>
+<div class="mb-2"><input id="regName" class="form-control" placeholder="নাম" /></div>
+<div class="mb-2"><input id="regPhone" class="form-control" placeholder="মোবাইল নাম্বার" /></div>
+<div class="mb-2"><input id="regEmail" class="form-control" placeholder="ইমেইল (Optional)" /></div>
+<div class="mb-2"><input id="regPassword" type="password" class="form-control" placeholder="পাসওয়ার্ড" /></div>
+<div class="mb-2"><button onclick="registerUser()" class="btn btn-success w-100">রেজিস্ট্রেশন</button></div>
+
+
+<p class="small text-muted mt-2">রেজিস্ট্রেশনের পরে অ্যাকাউন্ট স্বয়ংক্রিয়ভাবে এক্টিভ থাকবে — তুমি Admin হিসেবে চাইলে পরে বদলাতে পারো।</p>
+
+
+<!-- Main Content -->
+<div id="mainSection" class="container my-4 d-none">
+<!-- Carousel -->
+<div id="carouselContainer" class="mb-4">
+<div id="carouselSlides" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner" id="imageSlider"></div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselSlides" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselSlides" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+</div>
+
+
+<!-- Text slider -->
+<div id="textSlider" class="text-center mb-4 h5 text-primary"></div>
+
+
+<!-- 8 feature buttons -->
+<div id="featureGrid" class="row g-3"></div>
+
+
+<!-- Pages placeholders (gallery, videos etc.) -->
+<div id="pageContainer" class="mt-4"></div>
+</div>
+
+
+<footer class="bg-primary text-white text-center py-2 mt-4">
+© 2025 Nandia24
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
