@@ -1,0 +1,10 @@
+:root{--primary:#0b6cfb}
+*{box-sizing:border-box}
+body{font-family: 'Noto Sans', sans-serif;background:#f4f7fb;color:#222}
+.logo{width:44px;height:44px;border-radius:8px}
+#imageSlider img{width:100%;height:320px;object-fit:cover;border-radius:8px}
+#textSlider{font-weight:700}
+.feature-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;background:#fff;border:1px solid rgba(11,108,251,0.12);border-radius:10px;cursor:pointer}
+.feature-btn img{width:48px;height:48px;margin-bottom:8px}
+#pageContainer{min-height:200px}
+.hidden{display:none}
